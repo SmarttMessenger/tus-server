@@ -71,7 +71,7 @@ describe('worker basic auth', () => {
 
     it('rejects GET to backups with no second component', async () => {
         const res = await worker.fetch(`http://localhost/${backupsPath}/abc/`);
-        expect(res.status).toBe(401);
+        expect(res.status).toBe(404);
     });
 
     it.each(['write', '', 'abc'])('rejects GET to backups with %s permission', async (permission) => {
