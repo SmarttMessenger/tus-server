@@ -251,7 +251,7 @@ function rangeHeader(objLen: number, r2Range: R2Range): string {
     if ('length' in r2Range && r2Range.length != null) {
         endIndexInclusive = startIndexInclusive + r2Range.length - 1;
     }
-    if ('suffix' in r2Range) {
+    if ('suffix' in r2Range && r2Range.suffix != null) {
         startIndexInclusive = objLen - r2Range.suffix;
     }
     return `bytes ${startIndexInclusive}-${endIndexInclusive}/${objLen}`;
