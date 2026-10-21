@@ -3,7 +3,7 @@
   "version": "0.16.0",
   "type": "module",
   "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.17.0",
+    "@cloudflare/vitest-plugin": "^1.0.0",
     "@types/node": "^25.5.0",
     "@typescript-eslint/eslint-plugin": "^8.62.1",
     "@typescript-eslint/parser": "^8.44.0",
